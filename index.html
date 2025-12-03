@@ -2,64 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Practical PDFs</title>
+    <title>My Practical Files</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f2f2f2;
+            background: #eef2f3;
             margin: 0;
             padding: 20px;
         }
+
         h1 {
             text-align: center;
             background: #4A90E2;
             color: white;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 12px;
         }
-        .pdf-card {
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
             background: white;
-            padding: 15px;
+            padding: 18px;
             margin: 15px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
         }
-        a.button {
+
+        .card h2 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .button {
+            display: inline-block;
             background: #4A90E2;
             color: white;
             padding: 10px 15px;
             text-decoration: none;
             border-radius: 6px;
+            font-size: 16px;
             font-weight: bold;
         }
-        a.button:hover {
+
+        .button:hover {
             background: #357ABD;
         }
     </style>
 </head>
 
 <body>
-    <h1>My Practical PDFs</h1>
 
-    <!-- Add your PDFs here -->
-    <div class="pdf-card">
-        <h3>PDF 1: Example Notes</h3>
-        <a class="button" href="practicals nb.nb" target="_blank">Open PDF</a>
-    </div>
+    <h1>My Practical Files</h1>
 
-    <div class="pdf-card">
-        <h3>PDF 2: Another File</h3>
-        <a class="button" href="practicals pdf.pdf" target="_blank">Open PDF</a>
+    <div class="container">
+
+        <!-- Practicals NB File -->
+        <div class="card">
+            <h2>Practicals NB (Wolfram NB File)</h2>
+            <a class="button" href="practicals nb.nb" target="_blank">Open practicals nb.nb</a>
+        </div>
+
+        <!-- Practicals PDF -->
+        <div class="card">
+            <h2>Practicals PDF</h2>
+            <a class="button" href="practicals pdf.pdf" target="_blank">Open practicals pdf.pdf</a>
+        </div>
+
     </div>
 
 </body>
 </html>
-<div class="pdf-card">
-    <h3>Practicals NB File</h3>
-    <a class="button" href="practicals nb.nb" target="_blank">Open practicals nb.nb</a>
-</div>
-<div class="pdf-card">
-    <h3>Practicals PDF File</h3>
-    <a class="button" href="practicals pdf.pdf" target="_blank">Open practicals pdf.pdf</a>
-</div>
-
